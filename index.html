@@ -64,18 +64,12 @@
       align-items: center;
     }
     .store-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      background: #fff;
-      color: #000;
+      display: block;
       text-decoration: none;
-      padding: 0.875rem 2rem;
       border-radius: 12px;
-      font-weight: 600;
-      font-size: 1.05rem;
       width: 100%;
       max-width: 320px;
+      overflow: hidden;
       transition: transform 0.2s, box-shadow 0.2s;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     }
@@ -83,8 +77,11 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
     }
-    .store-btn svg { flex-shrink: 0; }
-    .store-btn .sub { font-weight: 400; font-size: 0.8rem; color: #666; }
+    .store-btn img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -98,12 +95,10 @@
     <div class="qr-label">Scan to download</div>
     <div class="stores">
       <a class="store-btn" href="https://apps.apple.com/gh/app/inura/id6763043075" target="_blank" rel="noopener">
-        <img src="app store.gif" alt="" style="width:28px;height:28px;border-radius:6px;" />
-        <span><span class="sub">Download on the</span><br />App Store</span>
+        <img src="app store.gif" alt="App Store" />
       </a>
       <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.inura.app" target="_blank" rel="noopener">
-        <img src="Google play Store.jpeg" alt="" style="width:28px;height:28px;border-radius:6px;" />
-        <span><span class="sub">Get it on</span><br />Google Play</span>
+        <img src="Google play Store.jpeg" alt="Google Play" />
       </a>
     </div>
   </div>
